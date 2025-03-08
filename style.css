@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./img/background.png);
+  background-position: center;
+  height: 100vh;
+}
+.container {
+  width: 100vw;
+  padding: 0 8%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.logo {
+  width: 120px;
+  padding: 20px 0;
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+#content {
+  text-transform: capitalize;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.showcase {
+  margin-top: 6rem;
+}
+.showcase-text {
+  font-size: 20px;
+}
+.showcase-text > span {
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 20px;
+}
+#content h1 span {
+  color: #ff3753;
+}
+#launch-info {
+  font-size: 40px;
+}
+#footer button {
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  padding: 15px 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 6%;
+}
+#footer button img {
+  width: 15px;
+  margin-left: 10px;
+}
+#footer button:hover {
+  border: 2px solid black;
+}
+.launch-time {
+  display: flex;
+  gap: 1rem;
+}
+.launch-time div {
+  flex-basis: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.launch-time div p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.rocket {
+  width: 250px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+  .showcase-text {
+    font-size: 17px;
+  }
+  .showcase-text > span {
+    font-size: 18px;
+  }
+  #footer button {
+    padding: 15px 20px;
+    margin-top: 10%;
+    margin-bottom: 2%;
+  }
+  #footer button img {
+    width: 15px;
+  }
+  #launch-info {
+    font-size: 30px;
+  }
+  .rocket {
+    width: 200px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #launch-info {
+    font-size: 25px;
+  }
+  .launch-time div p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #launch-info {
+    font-size: 15px;
+  }
+  .launch-time div p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .container {
+    display: flex;
+    gap: 8rem;
+  }
+}
