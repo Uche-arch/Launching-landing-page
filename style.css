@@ -139,6 +139,13 @@ h1 {
   .launch-time div p {
     font-size: 15px;
   }
+  .rocket {
+    width: 180px;
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -155,5 +162,12 @@ h1 {
   .container {
     display: flex;
     gap: 8rem;
+  }
+  .rocket {
+    width: 180px;
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
   }
 }
